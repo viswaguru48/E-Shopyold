@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 200ms;
+}
+:root {
+    --primary-color: #4c0000;
+    --secondary-color: #790202;
+    --color1: #af0101;
+    --color2: #830000;
+    --color3: #ffffff;
+    --font-family1: 'Comic Neue', cursive;
+    --font-family2: 'Lobster', cursive;;
+    --font-family3: 'Josefin Sans', sans-serif;
+}
+
+#home, #arrivals, .aboutus, #contact, #banner, #grocery, #mobiles, #laptops{
+    scroll-margin-top: 6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.home {
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -2;
+}
+.aboutus {
+    background-color: var(--color3);
+}
+
+.navbar {
+    background: transparent;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color: var(--primary-color);
+    font-family: var(--font-family3);
+    font-weight: 900;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+.nav-link {
+    color: var(--primary-color);
+    font-family: var(--font-family3);
+    font-size: 18px;
+}
+.nav-link:hover{
+    color: var(--color1);
+}
+header .nav-item .active{
+    color: #c00000;
+    border-bottom: 1px solid;
+    border-top: 1px solid ;
+    border-radius: 50%;
+}
+.carticon i{
+    color: var(--primary-color);
+}
+.carticon i:hover{
+    color: var(--color1);
+}
+.home{
+    margin-top: -70px;
+    padding-top: 80px;
+}
+.home h1{
+    font-family: var(--font-family2);
+    font-size: 75px;
+    color: var(--primary-color);
+}
+.home h3{
+    color: var(--primary-color);
+    font-family: var(--font-family3);
+    font-weight: 900;
+}
+.home p{
+    color: var(--primary-color);
+    font-family: var(--font-family3);
+    line-height: 1.5;
+}
+.home .btn{
+    background-color: var(--color2);
+    color: var(--color3);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: var(--font-family1);
+    padding: 10px 25px;
+}
+.home .btn:hover{
+    background-color: var(--color1);
+    color: var(--color3);
+}
+.arrivals h1{
+    color: var(--primary-color);
+    font-family: var(--font-family3);
+    font-weight: 700;
+}
+.arrivals h2{
+    color: var(--primary-color);
+    font-size: 25px;
+    font-family: var(--font-family3);
+    font-weight: 700;
+}
+.rating i{
+    color: var(--color1);
+}
+.arrivals p{
+    font-size: 30px;
+    color: var(--color2);
+    font-weight: 500;
+    font-family: var(--font-family3);
+}
+.arrivals .buynow{
+    background-color: var(--color2);
+    color: var(--color3);
+}
+.arrivals .cartbtn{
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}
+.arrivals .btn{
+    transition: 400ms;
+}
+.arrivals .btn:hover{
+    color: var(--color3);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-5px);
+    transition: .5s;
+}
+.arrivals .card-body{
+    z-index: 1;
+    background-color: var(--color3);
+}
+.arrivals .card img{
+    transition: 400ms;
+}
+.arrivals .card img:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
+.banner{
+    margin-top: 100px;
+}
+.banner1{
+    height: 600px;
+    background-image: url(./images/watch\ banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner2{
+    height: 600px;
+    background-image: url(./images/blue-sports-shoe-untied-ready-action-generated-by-ai.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner3{
+    height: 600px;
+    background-image: url(./images/pc-3000._CB578020883_.jpg);
+    background-size: cover;
+    background-position:center;
+    background-position-y:0px ;
+}
+
+.banner h1{
+    font-size: 100px;
+    color: var(--color3);
+    font-family: var(--font-family2);
+}
+.banner2 h1{
+    font-size: 100px;
+    color: var(--color2);
+    font-family: var(--font-family2);
+}
+.banner2 .bannerinfo h2{
+    font-size: 150px;
+    color: var(--primary-color);
+    font-family: var(--font-family2);
+}
+.banner2 .bannerinfo p{
+    font-size: 19px;
+    font-weight: 900;
+    color: var(--primary-color);
+    font-family: var(--font-family3);
+}
+.bannerinfo h2{
+    font-size: 150px;
+    color: var(--color2);
+    font-family: var(--font-family2);
+}
+.bannerinfo p{
+    font-size: 19px;
+    color: var(--color3);
+    font-family: var(--font-family3);
+}
+.bannerinfo span{
+    font-size: 30px;
+    color: var(--color2);
+    font-family: var(--font-family3);
+}
+
+.categories h1{
+    color: var(--primary-color);
+    font-family: var(--font-family3);
+    font-weight: 900;
+}
+.categories h2{
+    color: var(--color2);
+    font-family: var(--font-family3);
+    font-weight: 900;
+}
+.categories h2::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: var(--color2);
+    margin-top: 19px;
+    margin-left: 10px;
+}
+.categories h4{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-family: var(--font-family3);
+    font-weight: 900;
+}
+.categories h5{
+    color: var(--primary-color);
+    font-size: 23px;
+    font-family: var(--font-family1);
+    font-weight: 900;
+}
+.owl-dots .owl-dot span{
+    padding: 8px;
+    background-color: #af0101;
+}
+.tab-class{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+.nav-pills .nav-item{
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.nav-pills .nav-item:hover{
+    border-bottom: 2px solid var(--color2);
+}
+.nav-pills .nav-item .active{
+    border-bottom: 2px solid var(--color2);
+    height: 100%;
+    transform: translateY(1px);
+}
+.grocery .container .tab-class{
+    height: 620px;
+}
+.gmenu h1{
+    color: var(--primary-color);
+    font-family: var(--font-family3);
+    font-weight: 900;
+}
+.gmenu-items a i{
+    color: var(--color2);
+    font-size: 32px;
+}
+.gmenu-items a small{
+    color: var(--color2);
+    font-family: var(--font-family3);
+    font-weight: 900;
+}
+.gmenu-items a h6{
+    color: var(--primary-color);
+    font-family: var(--font-family3);
+    font-weight: 900;
+}
+.tab-content h5 span{
+    color: var(--secondary-color);
+}
+.tab-content small {
+    color: var(--color2);
+}
+.aboutus h1{
+    font-size: 60px;
+    font-family: var(--font-family2);
+    color: var(--primary-color);
+}
+.aboutus p{
+    font-size: 18px;
+    font-family: var(--font-family3);
+    color: var(--primary-color);
+}
+.aboutus .btn{
+    font-size: 16px;
+    border: 1px solid var(--secondary-color);
+    font-family: var(--font-family3);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: 400ms;
+}
+.aboutus .btn:hover{
+    background-color: var(--color1);
+    border: 1px solid var(--color1);
+    color: var(--color3);
+    transition: .6s;
+    transform: translateY(-5px);
+}
+.contact h1{
+    color: var(--primary-color);
+    font-family: var(--font-family3);
+    font-weight: 900;
+}
+.contact input, .contact textarea{
+    border-radius: 4px;
+    border: none;
+    border: 1px solid var(--color2);
+    font-size: 20px;
+    font-family: var(--font-family1);
+}
+.contact .btn{
+    background-color: var(--secondary-color);
+    padding: 10px 25px;
+    color: var(--color3);
+    border-radius: 4px;
+    font-family: var(--font-family1);
+    box-shadow: rgb(192, 192, 192) 0px 10px 10px;
+}
+.contact .btn:hover{
+    background-color: var(--color2);
+}
+.footer{
+    background-color:var(--color3) ;
+}
+footer .nav-link{
+    color: var(--color2);
+}
+footer .nav-link:hover{
+    color: var(--primary-color);
+}
+footer h5{
+    color: var(--primary-color);
+}
+footer p{
+    color: var(--color2);
+}
+footer .btn{
+    background-color: var(--color1);
+    color: var(--color3);
+    border: 1px solid var(--color1);
+    transition: 400ms;
+}
+footer .btn:hover{
+    background-color: var(--primary-color);
+    color: var(--color3);
+    transition: .6s;
+}
+footer i{
+    color: var(--color1);
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--color2);
+    transition: 400ms;
+}
+footer i:hover{
+    color: var(--color3);
+    background-color: var(--color1);
+    transition: .6s;
+}
+.backtotop a{
+    position: absolute;
+    top: 0;
+    top: 92%;
+    right: 0;
+    right: 3%;
+    position: fixed;
+    z-index: 10;
+}
+.backtotop a i{
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 10px;
+    border-radius: 0;
+    border-radius: 5px;
+}
+.backtotop a i:hover{
+    background-color: rgb(204, 0, 0);
+    border: 1px solid rgb(204, 0, 0);
+}
+@media (max-width:1199px){
+    .buynow{
+        padding: 5px 10px;
+    }
+    .cartbtn{
+        padding: 5px 3px;
+    }
+}
+@media (max-width:767px){
+    .banner1, .banner2, .banner3{
+        height: 250px;
+    }
+    header .nav-link{
+        text-align: center;
+        margin: 5px;
+    }
+    header .nav-link:hover{
+        background-color: #af0101;
+        color: var(--color3);
+    }
+    header .nav-item .active{
+        background-color: var(--color1);
+        color: var(--color3);
+        border: 0;
+        border-radius: 0%;
+    }
+    .banner h1{
+        font-size:30px ;
+    }
+    .banner2 .bannerinfo h2, .bannerinfo h2{
+        font-size: 45px;
+    }
+    .banner2 .bannerinfo p, .bannerinfo p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .tab-class{
+        height: 170px;
+        overflow: visible;
+    }
+    .grocery .container{
+        height: 1280px;
+    }
+    .aboutus h1{
+        font-size: 50px;
+    }
+    .nav-link {
+        width: 100%;
+    }
+    .buynow{
+        padding: 10px 20px;
+    }
+    .cartbtn{
+        padding: 10px 20px;;
+    }
+    
+}
+@media (max-width:477px){
+    .gmenu-items a i{
+        font-size: 22px;
+    }
+    .gmenu-items a{
+        gap: 5px;
+    }
+}
